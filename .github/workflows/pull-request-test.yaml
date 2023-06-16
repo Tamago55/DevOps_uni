@@ -59,11 +59,11 @@ jobs:
           tags: ghcr.io/mrhs-sem/my_package:${{ github.sha }}
 
       #For exercise 3 from here
-      - name: Authenticate with Google Cloud
-        uses: 'google-github-actions/auth@v1'
-        with:
-          workload_identity_provider: 'projects/70756149774/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
-          service_account: 'hshn-devsecops-service-account@hs-heilbronn-devsecops.iam.gserviceaccount.com'
+      # - name: Authenticate with Google Cloud
+      #   uses: 'google-github-actions/auth@v1'
+      #   with:
+      #     workload_identity_provider: 'projects/70756149774/locations/global/workloadIdentityPools/my-pool/providers/my-provider'
+      #     service_account: 'hshn-devsecops-service-account@hs-heilbronn-devsecops.iam.gserviceaccount.com'
 
       # This time I didn't have permission to modify the Google Artifact Registry, so I separately built Docker and pushed it to Google Cloud without using the code below which can build and push automatically.
       # -> Change my approach to deploy not from image but from source
