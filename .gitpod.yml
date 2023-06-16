@@ -12,10 +12,10 @@ ports:
       port: 8000
       onOpen: open-browser
 
-jetbrains:
-  intellij:
-    plugins:
-      - Pythonid
+# jetbrains:
+#   intellij:
+#     plugins:
+#       - Pythonid
 
 github:
     prebuilds:
